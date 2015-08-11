@@ -55,7 +55,8 @@ public class UsbModeChooserActivity extends Activity {
         UsbBackend.MODE_POWER_SOURCE | UsbBackend.MODE_DATA_NONE,
         UsbBackend.MODE_POWER_SINK | UsbBackend.MODE_DATA_MTP,
         UsbBackend.MODE_POWER_SINK | UsbBackend.MODE_DATA_PTP,
-        UsbBackend.MODE_POWER_SINK | UsbBackend.MODE_DATA_MIDI
+        UsbBackend.MODE_POWER_SINK | UsbBackend.MODE_DATA_MIDI,
+        UsbBackend.MODE_POWER_SINK | UsbBackend.MODE_DATA_UMS
     };
 
     private UsbBackend mBackend;
@@ -204,6 +205,8 @@ public class UsbModeChooserActivity extends Activity {
                 return R.string.usb_use_photo_transfers;
             case UsbBackend.MODE_POWER_SINK | UsbBackend.MODE_DATA_MIDI:
                 return R.string.usb_use_MIDI;
+            case UsbBackend.MODE_POWER_SINK | UsbBackend.MODE_DATA_UMS:
+                return R.string.usb_use_UMS;
         }
         return 0;
     }
