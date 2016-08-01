@@ -55,4 +55,6 @@
     <string name="media_scanner_on_boot_ask">Ask to scan (notification)</string>
     <string name="media_scanner_on_boot_disabled">Do not scan media</string>
 
+    <string name="device_info_title">Phone info</string>
+
 </resources>
