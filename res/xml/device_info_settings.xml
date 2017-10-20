@@ -32,6 +32,13 @@
                 lineage:requiresOwner="true"
                 lineage:requiresPackage="org.lineageos.updater" /> -->
 
+        <!-- Changelog -->
+        <Preference
+                android:key="changelog"
+                android:title="@string/changelog_title"
+                android:summary="@string/changelog_summary"
+                android:fragment="com.android.settings.deviceinfo.Changelog" />
+
         <!-- Device status - launches activity -->
         <Preference android:key="status_info"
                 android:title="@string/device_status"
