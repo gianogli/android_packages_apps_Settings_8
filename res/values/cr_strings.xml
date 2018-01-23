@@ -43,4 +43,10 @@
     <string name="pref_scrollingcache_force_disable">Force disable</string>
     <string name="animation_settings_title">Advanced options</string>
 
+    <!-- Screen Off animation -->
+    <string name="screen_off_animation_title">Screen off animation</string>
+    <string name="screen_off_animation_default">Default</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Scale</string>
+
 </resources>
