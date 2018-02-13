@@ -30,4 +30,37 @@
         <item>mass_storage</item>
     </string-array>
 
+    <!-- Titles for window animation scale preference. [CHAR LIMIT=35] -->
+    <string-array name="new_window_animation_scale_entries">
+        <item>Без анимации</item>
+        <item>Анимация 0.5x</item>
+        <item>Анимация 0.6x</item>
+        <item>Анимация 0.7x</item>
+        <item>Анимация 0.8x</item>
+        <item>Анимация 1x</item>
+        <item>Анимация 1.5x</item>
+    </string-array>
+
+    <!-- Titles for transition animation scale preference. [CHAR LIMIT=35] -->
+    <string-array name="new_transition_animation_scale_entries">
+        <item>Без анимации</item>
+        <item>Анимация 0.5x</item>
+        <item>Анимация 0.6x</item>
+        <item>Анимация 0.7x</item>
+        <item>Анимация 0.8x</item>
+        <item>Анимация 1x</item>
+        <item>Анимация 1.5x</item>
+    </string-array>
+
+    <!-- Titles for animator duration scale preference. [CHAR LIMIT=35] -->
+    <string-array name="new_animator_duration_scale_entries">
+        <item>Без анимации</item>
+        <item>Анимация 0.5x</item>
+        <item>Анимация 0.6x</item>
+        <item>Анимация 0.7x</item>
+        <item>Анимация 0.8x</item>
+        <item>Анимация 1x</item>
+        <item>Анимация 1.5x</item>
+    </string-array>
+
 </resources>
