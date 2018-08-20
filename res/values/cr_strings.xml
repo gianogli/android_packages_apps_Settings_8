@@ -34,4 +34,13 @@
     <string name="changelog_summary">See some of the recent commits.</string>
     <string name="changelog_error">Unable to load changelog</string>
 
+    <!-- Option to enable/disable scrolling cache -->
+    <string name="pref_scrollingcache_title">Scrolling cache</string>
+    <string name="pref_scrollingcache_summary">Scrolling cache may improve scrolling performance at the cost of memory</string>
+    <string name="pref_scrollingcache_force_enable">Force enable</string>
+    <string name="pref_scrollingcache_default_enable">Default enable</string>
+    <string name="pref_scrollingcache_default_disable">Default disable</string>
+    <string name="pref_scrollingcache_force_disable">Force disable</string>
+    <string name="animation_settings_title">Advanced options</string>
+
 </resources>

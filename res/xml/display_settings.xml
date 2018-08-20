@@ -165,6 +165,11 @@
         android:defaultValue="false"
         lineage:requiresFeature="lineagehardware:FEATURE_HIGH_TOUCH_SENSITIVITY" />
 
+    <PreferenceScreen
+        android:key="pref_animation_settings"
+        android:title="@string/animation_settings_title"
+        android:fragment="com.android.settings.display.AnimationSettings" />
+
     <!-- Use LineageParts for styles 
     <ListPreference
         android:key="theme"
