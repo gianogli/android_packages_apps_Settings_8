@@ -425,7 +425,9 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         mBackupManager = IBackupManager.Stub.asInterface(
                 ServiceManager.getService(Context.BACKUP_SERVICE));
         mWebViewUpdateService = WebViewFactory.getUpdateService();
-        mOemLockManager = (OemLockManager) getSystemService(Context.OEM_LOCK_SERVICE);
+        if (showEnableOemUnlockPreference(getContext())) {
+            mOemLockManager = (OemLockManager) getSystemService(Context.OEM_LOCK_SERVICE);
+        }
         mTelephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
 
         mUm = (UserManager) getSystemService(Context.USER_SERVICE);
@@ -1239,7 +1241,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     }
 
     private static boolean showEnableOemUnlockPreference(Context context) {
-        return context.getSystemService(Context.OEM_LOCK_SERVICE) != null &&
+        return ServiceManager.getService(Context.OEM_LOCK_SERVICE) != null &&
                 SystemProperties.getBoolean("ro.oem_unlock_supported", false);
     }
 
