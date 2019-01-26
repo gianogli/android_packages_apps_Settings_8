@@ -25,6 +25,7 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v7.preference.Preference;
 import android.text.TextUtils;
+import android.graphics.drawable.Icon;
 import android.util.Log;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
@@ -130,7 +131,7 @@ public class DashboardFeatureProviderImpl implements DashboardFeatureProvider {
         } else {
             pref.setSummary(R.string.summary_placeholder);
         }
-        if (tile.icon != null) {
+	if (tile.icon != null && !(tile.icon.getType() == tile.icon.TYPE_RESOURCE && tile.icon.getResId() == 0)) {
             pref.setIcon(tile.icon.loadDrawable(activity));
         }
         final Bundle metadata = tile.metaData;
