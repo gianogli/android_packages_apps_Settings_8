@@ -815,7 +815,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         }*/
 
         BluetoothAdapter adapter = BluetoothAdapter.getDefaultAdapter();
-        if (adapter != null) {
+        if (adapter != null && BluetoothAdapter.getDefaultAdapter().isEnabled()) {
             adapter.getProfileProxy(getActivity(),
                                     mBluetoothA2dpServiceListener,
                                     BluetoothProfile.A2DP);
